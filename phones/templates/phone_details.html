@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{ phone.brand_name }} Detayları{% endblock title %}
+{% block content %}
+<link rel="stylesheet" href="{% static "css/details.css" %}">
+    <h1>{{ phone.model_name }} Detayları</h1>
+    <div>
+        <img src="{{ phone.image.url }}" alt="{{ phone.name }}">
+        <p><strong>Fiyat:</strong> {{ phone.price }}$</p>
+        <p><strong>Name:</strong> {{ phone.brand_name }} {{ phone.model_name }}</p>
+        <p><strong>Renk:</strong> {{ phone.color }}</p>
+        <p><strong>Depolama Alanı:</strong> {{ phone.memory }} GB</p>
+    </div>
+{% endblock content %}
+
+

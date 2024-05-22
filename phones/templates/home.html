@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}ShopyPhone{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static "css/home.css" %}">
+<div class="container">
+    {% for phone in phones %}
+    <div class="product-card">
+        <a href="{{ phone.get_absolute_url }}" style="text-decoration: none;">
+            <img src="{{ phone.image.url }}" alt="{{ phone.brand_name }}" class="thumbnail">
+            <div class="details">
+                <h3>{{ phone.model_name }}</h3>
+                <p>Description: {{ phone.description }}</p>
+                <p>Price: ${{ phone.price }}</p>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}
+  
+

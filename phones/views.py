@@ -7,11 +7,11 @@ def home(request):
     context = {
         "phones":phones
     }
-    return render(request, "phones/home.html", context)
+    return render(request, "home.html", context)
 
 def phone_details(request, pk):
     phone = Phone.objects.get(pk=pk)
     context = {
         "phone":phone
     }
-    return render(request, "phones/phone_details.html", context)
+    return render(request, "phone_details.html", context)

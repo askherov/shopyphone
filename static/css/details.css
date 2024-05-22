@@ -1,0 +1,54 @@
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.navbar h1 {
+    margin: 0;
+    float: left;
+}
+
+.navbar a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.content strong {
+    font-weight: bold;
+    color: #333;
+}
